@@ -9,11 +9,19 @@
   <body>
     <header>
       <div class="container">
-        <div class="header-left">
-          <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png">
+        <div class="header-left" id="myTopnav">
+          <!-- <img class="logo" src="https://prog-8.com/images/html/advanced/main_logo.png"> -->
+            <a href="#home" class="active">Home</a>
+            <a 
+            href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
         </div>
         <div class="header-right">
-          <a href="#" class="login">Log in</a>
+          <a href="#" class="login">Sign UP</a>
         </div>
       </div>
     </header>
@@ -84,4 +92,14 @@
       </div>
     </footer>
   </body>
-</html>``
+</html>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "header-left") {
+      x.className += " responsive";
+    } else {
+      x.className = "header-left";
+    }
+  }
+  </script>
