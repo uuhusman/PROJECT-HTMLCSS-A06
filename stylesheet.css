@@ -72,8 +72,60 @@ header {
     position: relative;
     margin: auto;
   }
-  
-  /* Next & previous buttons */
+
+.mySlides {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+  .mySlides h1 {
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    opacity: 0.8;
+    transform: translate(-50%, -50%);
+  }
+
+  .mySlides  p {
+    position: absolute;
+    padding-top: 150px;
+    font-size: 20px;
+    opacity: 0.8;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media only screen and (max-width: 800px) {
+    .mySlides  p {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .mySlides  p {
+      padding-top: 200px;
+    }
+  }
+
+  .btn-visit {
+    border-radius: 8px;
+    display: block;
+    padding: 10px 25px;
+    background-color: #0097A7;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    bottom: 10px;
+  }
+
+  .btn-visit:hover {
+    background-color: #BBDEFB;
+    color: white;
+  }
+
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -89,29 +141,15 @@ header {
     user-select: none;
   }
   
-  /* Position the "next button" to the right */
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
   }
   
-  /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
   
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
   .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -120,7 +158,6 @@ header {
     top: 0;
   }
   
-  /* The dots/bullets/indicators */
   .dot {
     cursor: pointer;
     height: 15px;
@@ -136,10 +173,9 @@ header {
     background-color: #BBDEFB;
   }
   
-  /* Fading animation */
   .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
   }
   
   @keyframes fade {
@@ -147,7 +183,52 @@ header {
     to {opacity: 1}
   }
   
-  /* On smaller screens, decrease text size */
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
+  }
+
+  /* lessson wrapper */
+  .lesson-wrapper {
+    height: 500px;
+    padding-bottom: 80px;
+    /* background-color: #f7f7f7; */
+    text-align: center;
+  }
+  
+  .heading {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: #5f5d60;
+  }
+  
+  .heading h2 {
+    font-weight: normal;
+  }
+  
+  .lesson {
+    float: left;
+    width: 25%;
+  }
+  
+  .lesson-icon {
+    position: relative;
+  }
+  
+  .lesson-icon p {
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    color: white;
+  }
+  
+  .txt-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #b3aeb5;
+  }
+  
+  .heading h3 {
+    font-weight: normal;
   }
