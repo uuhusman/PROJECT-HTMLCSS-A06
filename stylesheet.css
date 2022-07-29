@@ -79,7 +79,7 @@ header {
   color: white;
 }
 
-  .mySlides h1 {
+  .main-title {
     position: absolute;
     font-weight: bold;
     top: 50%;
@@ -88,7 +88,7 @@ header {
     transform: translate(-50%, -50%);
   }
 
-  .mySlides  p {
+  .main-detail {
     position: absolute;
     padding-top: 150px;
     font-size: 20px;
