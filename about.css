@@ -1,0 +1,53 @@
+.beach-title {
+	font-size: 17px;
+	font-weight: 600;
+	color: #545155;
+	margin-bottom: 1rem;
+}
+.beach-text {
+	font-size: 17px;
+	line-height: 1.4em;
+	color: #b3aeb5;
+}
+@media only screen and (min-width: 768px) {
+	
+	.beach-title {
+		font-size: 3.6rem;
+	}
+	.beach-text {
+		font-size: 17px;
+		max-width: 800px;
+	}
+}
+
+
+.beach-info {
+	text-align: center;
+	margin-bottom: 5rem;
+}
+.beach-imgs-wrapper img {
+	object-fit: cover;
+}
+.beach-imgs-wrapper {
+	max-width: 800px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-row: auto;
+	gap: 1rem;
+}
+.beach-img1 {
+	grid-row: 1/3;
+}
+@media only screen and (min-width: 768px) {
+	.beach-info {
+		text-align: center;
+	}
+	.beach-imgs-wrapper {
+		gap: 2rem;
+	}
+	.beach-text {
+		margin: 0 auto;
+	}
+}
